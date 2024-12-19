@@ -1,0 +1,103 @@
+/* Step 1: Basic Layout Styles */
+body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Step 2: Navbar Styles */
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid 3px #858585;
+    background-color: white;
+}
+
+#navbar header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+    border-top: 1px solid black;
+}
+
+/* Step 3: Main Content Styles */
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+/* Step 4: Section Styles */
+.main-section {
+    margin-bottom: 50px;
+}
+
+.main-section header {
+    text-align: left;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Step 5: Content Element Styles */
+p {
+    margin: 15px 0px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Step 6: List Styles */
+ul {
+    padding-left: 40px;
+}
+
+/* Step 7: Responsive Design */
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
